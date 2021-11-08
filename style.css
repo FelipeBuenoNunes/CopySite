@@ -14,6 +14,9 @@
     --font-spinnakerSize: clamp(1.08rem, calc(3vw - 0.5rem), 2rem) var(--font-spinnaker);
     --font-ralewaySize: clamp(0.77rem, calc(3vw - 0.9rem), 1.4375rem) var(--font-ralewai);
     --font-ralewaySizeh: clamp(0.7rem, calc(3vw - 1rem), 1.3125rem) var(--font-ralewai);
+    --font-spinnakerProduto: clamp(0.65rem, calc(3vw - 1.1rem), 1.1875rem) var(--font-spinnaker);
+    --font-ralewaiPreco: clamp(0.57rem, calc(3vw - 1.2rem), 1.0625rem) var(--font-ralewai);
+
 }
 *{
     margin: 0;
@@ -86,6 +89,7 @@ h1{
 /*Fim do HEADER----------------------------------------*/
 /*Começando o MAIN*/
 
+/*2 primeiros section*/
 .container,
 .containerTwo{
     display: flex;
@@ -138,6 +142,7 @@ h1{
 .containerTwo{
     background-color: #d4e4e0;
     color: white;
+    margin-bottom: clamp(1.2rem, calc(5.5vw - 0.7rem), 3.3625rem);
 }
 .containerTwo .textInContainer{
     background-color: #a3c7bd;
@@ -147,4 +152,208 @@ h1{
 }
 #estilo{
     font: clamp(1.08rem, calc(3.5vw - 0.5rem), 2.5rem) var(--font-spinnaker);
+}
+
+/*FIM dos primeiros section---------------------------------------------------*/
+
+main p{
+    font:var(--font-spinnakerSize);
+    text-align: center;
+    margin-bottom: clamp(1.2rem, calc(3.5vw - 0.5rem), 3.2125rem);
+}
+.containerThird{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+}
+.novos{
+    margin-left: 15px;
+}
+.containerThird :nth-child(1){
+    margin: 0px;
+}
+#saia > img{
+    width: clamp(112.5px, calc(25vw - 1.5rem), 315px);
+}
+#calca > img{
+    width: clamp(113.21px, calc(25vw - 1.5rem), 317px);
+}
+#vestido > img,
+.vestido{
+    width: clamp(113.92px, calc(25vw - 1.5rem), 319px);
+}
+
+.novos div{
+    margin-top: -4px;
+    background-color: rgba(147,147,147,0.2786885245901639);
+    padding: clamp(8px, calc(10vw - 1rem), 19px);
+}
+.novos > div > h3{
+    text-align: center;
+    font-weight: 100;
+    font: var(--font-spinnakerProduto);
+    line-height: 1.4em;
+}
+.novos > div > span{
+    font: var(--font-ralewaiPreco);
+    display: block;
+    text-align: center;
+    padding-top: clamp(2px ,calc(10vw - 2rem), 10px);
+}
+
+/*FIM ---------------------*/
+.containerr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerr form{
+    text-align: center;
+}
+#parte,
+#promocoes{
+    margin-bottom: 0px;
+    line-height: 1.5em;
+}
+#promocoes{
+    font: var(--font-ralewaySizeh);
+    margin-bottom: clamp(11px, calc(3vw - 5px), 33px);
+}
+section input{
+    width: clamp(300px, calc(67vw - 30px), 980px);
+    height: clamp(25px, 10vh - 1rem, 40px);
+    padding: 3px 3px 3px clamp(10px, calc(2.3vw - 1px), 21px);
+    margin-bottom: 3px;
+    background-color: #e4e4e4;
+    border: 0.5px solid #939393;
+}
+section button{
+    width: clamp(300px, calc(67vw - 30px), 980px);
+    height: clamp(22px, 10vh - 1rem, 38px);
+    background-color: #313131;
+    color: white;
+    border: 0px;
+    margin-bottom: 73px;
+}
+/*Fim Inputs ----------------------*/
+.containerPro{
+    background-color: #242323;
+    display: flex;
+    justify-content: center;
+}
+.containerPro > figure{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(5px, calc(5vw - 1rem), 31px);
+    padding-top: clamp(8px, calc(5vw - 1rem), 60px);
+    padding-bottom: clamp(8px, calc(5vw - 1rem), 60px);
+}
+.containerPro > figure > figcaption{
+    position: absolute;
+    font: clamp(0.44rem, calc(3vw - 0.9rem), 1.4375rem) var(--font-ralewai);
+    top: 41.5%;
+    color: white;
+}
+.containerPro > figure > span{
+    position: absolute;
+    top: 48%;
+    font: clamp(0.8rem, calc(4vw - 0.5rem), 2.625rem) var(--font-spinnaker);
+    color: white;
+}
+.containerPro > figure > img{
+    width: clamp(140px, calc(33.5vw - 15px), 458px);
+}
+
+/*FIM -------------------*/
+/*Começo do footer*/
+.container-footer{
+    height: clamp(120px , calc(20vw - 2rem), 235.4px);
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    background-color: #e4e4e4;
+    color: #939393;
+}
+.resto-footer{
+    height: clamp(34px, calc(20vh - 2rem), 111.6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #242323; 
+    color: white;
+}
+.resto-footer a{
+    text-decoration: underline;
+}
+
+#h1{
+    font-family: var(--font-ralewai);
+    letter-spacing: 0.2em;
+    font-size: clamp(0.8rem, calc(5vw - 1rem), 1.5625rem);
+    font-weight: 200;
+    margin-top: clamp(0.9rem, calc(8vh - 1rem), 2.9375rem);
+    margin-right: clamp(0.4rem, calc(7vw - 1rem), 5.5rem);
+}
+.h2{
+    font: var(--font-ralewaiPreco);
+    margin-top: clamp(6px, calc(5vw, - 1rem), 55px);
+    margin-bottom: 10px;
+}
+.padrao{
+    font: clamp(0.45rem, calc(3vw - 1rem), 0.875rem) var(--font-ralewai);
+    margin-top: clamp(1px, calc(10vh - 1rem), 5px);
+}
+
+.linha{
+    width: 1px;
+    height: 127px;
+    background-color: black;
+    align-self: center;
+}
+
+ul{
+    list-style: none;
+    align-self: center;
+}
+#icons{
+    display: flex;
+    margin: 0px;
+}
+#icons li{
+    margin: 0px;
+}
+#icons li img{
+    margin: 0px;
+    width: clamp(20px, calc(5vw - 2rem), 50px);
+}
+#atendimento,
+#siga,
+#visite{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#atendimento li,
+#siga li,
+#visite li{
+    width: 100%;
+}
+
+footer p{
+    font: clamp(7px, calc(10vw - 5rem), 12px) var(--font-ralewai);
+    text-align: center;
+    margin-bottom: clamp(0rem, calc(2.5vh - 1rem), 0.4rem);
+}
+
+/*Algumas animações*/
+input:hover{
+    border: 3px solid #939393;
+}
+button:hover{
+    background-color: hsla(0, 0%, 19%, 0.589);
+    transition: all 0.3s ease;
+
 }
